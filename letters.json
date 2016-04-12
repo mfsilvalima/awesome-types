@@ -1,10 +1,46 @@
 {
   "a" : [
-    "https://uploaddeimagens.com.br/images/000/595/986/original/a1.jpg",
-    "https://uploaddeimagens.com.br/images/000/595/993/original/a2.jpg"
+    "dist/img/letters/a1.jpg",
+    "dist/img/letters/a2.jpg"
   ],
   "b" : [
-    "https://uploaddeimagens.com.br/images/000/595/996/original/b1.jpg",
-    "https://uploaddeimagens.com.br/images/000/595/998/original/b2.jpg"
+    "dist/img/letters/b1.jpg",
+    "dist/img/letters/b2.jpg"
+  ],
+  "c" : [
+    "dist/img/letters/c1.jpg",
+    "dist/img/letters/c2.jpg"
+  ],
+  "d" : [
+    "dist/img/letters/d1.jpg",
+    "dist/img/letters/d2.jpg"
+  ],
+  "e" : [
+    "dist/img/letters/e1.jpg",
+    "dist/img/letters/e2.jpg"
+  ],
+  "f" : [
+    "dist/img/letters/f1.jpg",
+    "dist/img/letters/f2.jpg"
+  ],
+  "g" : [
+    "dist/img/letters/g1.jpg",
+    "dist/img/letters/g2.jpg"
+  ],
+  "h" : [
+    "dist/img/letters/h1.jpg",
+    "dist/img/letters/h2.jpg"
+  ],
+  "i" : [
+    "dist/img/letters/i1.jpg",
+    "dist/img/letters/i2.jpg"
+  ],
+  "j" : [
+    "dist/img/letters/j1.jpg",
+    "dist/img/letters/j2.jpg"
+  ],
+  "k" : [
+    "dist/img/letters/k1.jpg",
+    "dist/img/letters/k2.jpg"
   ]
 }
