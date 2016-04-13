@@ -11,6 +11,15 @@ function animacoes(){
   });
 }
 
+function downloadCanvas(link, canvasId, filename) {
+    link.href = document.querySelector('#wordCanvas').toDataURL();
+    link.download = filename;
+}
+
+document.getElementById('download').addEventListener('click', function() {
+    downloadCanvas(this, 'wordCanvas', 'test.png');
+}, false);
+
 function drawCanvas(imgs) {
   var word = document.querySelector("#word").value.toLowerCase();
   var wordLength = word.length;
