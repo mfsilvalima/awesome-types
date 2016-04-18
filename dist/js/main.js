@@ -56,9 +56,14 @@ $(document).on('ready', function () {
 
     $("#form").submit(function() {
       loadJsonLetters();
+
+      setTimeout(function(){
+        $('#image').attr("src", document.querySelector('#wordCanvas').toDataURL());
+      }, 500);
+
       return false;
     });
-    
+
     $("input#word").on({
       keydown: function(e) {
         if (e.which === 32)

@@ -7866,3 +7866,9 @@ button.close {
   background-position: -5px -5px;
   width: 89px;
   height: 200px; }
+
+canvas {
+  display: none; }
+
+img {
+  max-width: 100%; }

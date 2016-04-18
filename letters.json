@@ -42,5 +42,33 @@
   "k" : [
     "dist/img/letters/k1.jpg",
     "dist/img/letters/k2.jpg"
+  ],
+  "l" : [
+    "dist/img/letters/l1.jpg",
+    "dist/img/letters/l2.jpg"
+  ],
+  "m" : [
+    "dist/img/letters/m1.jpg",
+    "dist/img/letters/m2.jpg"
+  ],
+  "n" : [
+    "dist/img/letters/n1.jpg",
+    "dist/img/letters/n2.jpg"
+  ],
+  "o" : [
+    "dist/img/letters/o1.jpg",
+    "dist/img/letters/o2.jpg"
+  ],
+  "p" : [
+    "dist/img/letters/p1.jpg",
+    "dist/img/letters/p2.jpg"
+  ],
+  "q" : [
+    "dist/img/letters/q1.jpg",
+    "dist/img/letters/q2.jpg"
+  ],
+  "r" : [
+    "dist/img/letters/r1.jpg",
+    "dist/img/letters/r2.jpg"
   ]
 }
