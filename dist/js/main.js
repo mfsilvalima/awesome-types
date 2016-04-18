@@ -53,9 +53,20 @@ $(document).on('ready', function () {
     $(window).on('scroll', function(){
       animacoes();
     });
+
     $("#form").submit(function() {
       loadJsonLetters();
       return false;
+    });
+    
+    $("input#word").on({
+      keydown: function(e) {
+        if (e.which === 32)
+          return false;
+      },
+      change: function() {
+        this.value = this.value.replace(/\s/g, "");
+      }
     });
 });
 
