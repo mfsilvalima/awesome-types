@@ -60,7 +60,7 @@ $(document).on('ready', function () {
           return false;
       },
       keyup: function(e) {
-        if (e.which >= 65 && <= 90 || >= 48 && <= 57){
+        if (e.which >= 65 && e.which <= 90 || e.which >= 47 && e.which <= 58){
           loadJsonLetters();
 
           setTimeout(function(){
