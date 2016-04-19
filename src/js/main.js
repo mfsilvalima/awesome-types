@@ -54,20 +54,21 @@ $(document).on('ready', function () {
       animacoes();
     });
 
-    $("#form").submit(function() {
-      loadJsonLetters();
-
-      setTimeout(function(){
-        $('#image').attr("src", document.querySelector('#wordCanvas').toDataURL());
-      }, 500);
-
-      return false;
-    });
-
     $("input#word").on({
       keydown: function(e) {
         if (e.which === 32)
           return false;
+      },
+      keyup: function(e) {
+        if (e.which >= 65 && <= 90 || >= 48 && <= 57){
+          loadJsonLetters();
+
+          setTimeout(function(){
+            $('#image').attr("src", document.querySelector('#wordCanvas').toDataURL());
+          }, 50);
+
+          return false;
+        }
       },
       change: function() {
         this.value = this.value.replace(/\s/g, "");
