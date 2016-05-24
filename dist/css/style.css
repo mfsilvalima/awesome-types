@@ -7867,7 +7867,49 @@ button.close {
   width: 89px;
   height: 200px; }
 
-canvas {
+h1 {
+  text-indent: -9999px;
+  position: absolute; }
+
+h2 {
+  font-size: 4vw; }
+
+a#download {
+  display: none;
+  width: 20%;
+  margin: 20px auto; }
+
+.main, .container-image {
+  display: inline-block;
+  top: 50%;
+  text-align: center;
+  position: absolute; }
+
+.main {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%; }
+
+.container-image {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 50px; }
+
+input {
+  pointer-events: none;
+  background: none;
+  border: none;
+  color: transparent;
+  overflow: hidden;
+  outline: none; }
+
+.container-fluid {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+canvas#wordCanvas {
   display: none; }
 
 img {

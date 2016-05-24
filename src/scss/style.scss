@@ -5,9 +5,18 @@
 //import base files
   @import "base/icons";
 
-canvas{
+//import modules files
+  @import "modules/home";
+
+.container-fluid{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+canvas#wordCanvas{
   display: none;
 }
+
 img{
   max-width: 100%;
 }

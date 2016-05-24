@@ -17,7 +17,7 @@ function downloadCanvas(link, canvasId, filename) {
 }
 
 document.getElementById('download').addEventListener('click', function() {
-    downloadCanvas(this, 'wordCanvas', 'test.png');
+    downloadCanvas(this, 'wordCanvas', 'word.png');
 }, false);
 
 function drawCanvas(imgs) {
@@ -50,21 +50,30 @@ function loadJsonLetters() {
 }
 
 $(document).on('ready', function () {
+    $(word).focus();
+
     $(window).on('scroll', function(){
       animacoes();
     });
 
-    $("input#word").on({
+    $(word).on({
       keydown: function(e) {
         if (e.which === 32)
           return false;
       },
       keyup: function(e) {
-        if (e.which >= 65 && e.which <= 90 || e.which >= 47 && e.which <= 58){
+        if (e.which >= 65 && e.which <= 90 || e.which >= 47 && e.which <= 58 || e.which === 8){
           loadJsonLetters();
 
           setTimeout(function(){
-            $('#image').attr("src", document.querySelector('#wordCanvas').toDataURL());
+            $('#image').attr("src", document.querySelector('#wordCanvas').toDataURL()).css("display", "inline-block");
+            $('#download').css("display", "block");
+            $('h2').css("display", "none");
+            if(word.value ===""){
+              $('#download').css("display", "none");
+              $('h2').css("display", "block");
+              $('#image').css("display", "none");
+            }
           }, 50);
 
           return false;

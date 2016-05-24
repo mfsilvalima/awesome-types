@@ -21,19 +21,22 @@
     <link rel="stylesheet" href="dist/css/style.min.css">
   </head>
   <body>
+
     <div class="container-fluid">
       <div class="row">
-        <h1>Awesome types</h1>
-        <input type="text" name="enter" class="enter" value="" id="word" maxlength="15" />
-      </div>
-
-      <div class="row text-center">
-        <img id="image" src="" alt="" />
-        <canvas id="wordCanvas"></canvas>
+        <div class="main">
+          <h1>Awesome types</h1>
+          <h2>Type a word</h2>
+          <input type="text" name="enter" class="enter" value="" id="word" maxlength="15" />
+        </div>
       </div>
 
       <div class="row">
-        <a id="download">Download as image</a>
+        <div class="container-image">
+          <img id="image" src="" alt="" />
+          <canvas id="wordCanvas"></canvas>
+          <a id="download" class="btn btn-primary">Download as image</a>
+        </div>
       </div>
     </div>
 
